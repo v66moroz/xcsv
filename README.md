@@ -18,4 +18,4 @@ To configure your current shell run source $HOME/.cargo/env
 
 ```
 
-2. `gem build xcsv`
+2. `bundle exec rake`
