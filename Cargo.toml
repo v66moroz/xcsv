@@ -1,0 +1,11 @@
+[package]
+name = "xcsv"
+version = "0.1.0"
+authors = ["Victor Moroz"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+helix = "0.7.5"
+csv = "1.0.2"
