@@ -68,11 +68,13 @@ end
 
 #### Platform
 
+
 | Records | File size | CPU |
 | --- | --- | --- | --- |
 | 1M | 742M (426M .gz) | i7-6600U @ 2.60GHz |
 
 #### Elapsed time (secs):
+
 
 | FastestCSV | XCSV | XCSV (.gz) | CSV |
 | --- | --- | --- |
