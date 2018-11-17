@@ -66,7 +66,7 @@ CSV.foreach('sample.csv') do |rec|
 end
 ```
 
-#### Platform
+#### Parameters
 
 |Records|File size|CPU|
 |---|---|---|
