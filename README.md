@@ -8,15 +8,14 @@ Fast CSV reader based on [Rust CSV crate](https://docs.rs/csv/1.0.2/csv/)
 
    Don't miss this message:
 
-	```
-	Rust is installed now. Great!
+   ```
+   Rust is installed now. Great!
 
-	To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH 
-	environment variable. Next time you log in this will be done automatically.
+   To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH 
+   environment variable. Next time you log in this will be done automatically.
 
-	To configure your current shell run source $HOME/.cargo/env
-
-	```
+   To configure your current shell run source $HOME/.cargo/env
+   ```
 
 2. `gem install xcsv`
 
@@ -58,7 +57,7 @@ end
 
 # XCSV
 csv_reader = XCSV.new('sample.csv')
-while (l = csv_reader.next) do
+while (rec = csv_reader.next) do
 end
 
 # CSV

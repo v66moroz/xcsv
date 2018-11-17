@@ -5,8 +5,8 @@ class XCSV
   include Enumerable
 
   def each
-    while (r = self.next) do
-      yield r
+    while (rec = self.next) do
+      yield rec
     end
   end
 end
