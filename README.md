@@ -25,24 +25,28 @@ Fast CSV reader based on [Rust CSV crate](https://docs.rs/csv/1.0.2/csv/)
 require 'xcsv'
 
 # Enumerable
-csv_reader = XSV.new("foo.csv")
-csv_reader.each do |rec|
-  rec #=> [col1, col2, col3, ...]
+XCSV.open("foo.csv") do |csv_reader|
+  csv_reader.each do |rec|
+    rec #=> [col1, col2, col3, ...]
+  end
 end
 
-csv_reader = XSV.new("foo.csv")
-csv_reader.take(10).to_a #=> [[col1, ...], [col1, ...], ...]
+XCSV.open("foo.csv") do |csv_reader|
+  csv_reader.take(10).to_a #=> [[col1, ...], [col1, ...], ...]
+end
 
 # while loop
-csv_reader = XSV.new("bar.csv") 
-while (rec = csv_reader.next) do
-  rec #=> [col1, col2, col3, ...]
+XCSV.open("bar.csv") do |csv_reader|
+  while (rec = csv_reader.next) do
+    rec #=> [col1, col2, col3, ...]
+  end
 end
 
 # Both forms will gunzip if file name ends with .gz
-csv_reader = XSV.new("foo_bar.csv.gz") 
-while (rec = csv_reader.next) do
-  rec #=> [col1, col2, col3, ...]
+XCSV.open("foo_bar.csv.gz") do |csv_reader|
+  while (rec = csv_reader.next) do
+    rec #=> [col1, col2, col3, ...]
+  end
 end
 ```
 
@@ -56,8 +60,9 @@ FastestCSV.foreach('sample.csv') do |rec|
 end
 
 # XCSV
-csv_reader = XCSV.new('sample.csv')
-while (rec = csv_reader.next) do
+XCSV.open('sample.csv') do |csv_reader|
+  while (rec = csv_reader.next) do
+  end
 end
 
 # CSV
