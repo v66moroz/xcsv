@@ -1,3 +1,5 @@
 /target
 *.so
 /*.gem
+/.bundle
+/vendor/bundle

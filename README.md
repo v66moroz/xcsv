@@ -33,7 +33,7 @@ end
 csv_reader = XSV.new("foo.csv")
 csv_reader.take(10).to_a #=> [[col1, ...], [col1, ...], ...]
 
-# While loop
+# while loop
 csv_reader = XSV.new("bar.csv") 
 while (rec = csv_reader.next) do
   rec #=> [col1, col2, col3, ...]

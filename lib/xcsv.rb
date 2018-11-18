@@ -1,5 +1,6 @@
 require 'helix_runtime'
 require 'xcsv/native'
+require 'xcsv/version'
 
 class XCSV
   include Enumerable
